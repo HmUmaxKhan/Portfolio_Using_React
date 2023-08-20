@@ -1,17 +1,13 @@
+import React from 'react';
 
-import React, { useEffect } from 'react';
-import { initScrollReveal, initTyped } from '../utils/animations';
 
 function Home() {
 
-  useEffect(() => {
-    initScrollReveal();
-    initTyped();
+  // useEffect(() => {
+  //   initScrollReveal();
+  //   initTyped();
+  // },[])
 
-    return () => {
-  
-    };
-  }, []);
   return (
     <div>
       <section className="home" id="home">
