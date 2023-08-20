@@ -1,12 +1,19 @@
-import React from 'react';
-
+import React,{useEffect} from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchSkill } from '../Redux/Slices/fetchSkill';
 
 function Home() {
 
-  // useEffect(() => {
-  //   initScrollReveal();
-  //   initTyped();
-  // },[])
+  const dispatch = useDispatch();
+  const skills = useSelector((state) => state.skills);
+
+  useEffect(() => {
+    dispatch(fetchSkill());
+  }, [dispatch]);
+
+  useEffect(() => {
+    console.log(skills);
+  }, [skills]);
 
   return (
     <div>

@@ -34,8 +34,7 @@ export const initTyped1 = () => {
   
     const typed1 = new Typed('.multiple-text2', {
       strings: ['Frontend Developer', 'MERN Developer', 'Software Engineer'],
-      typeSpeed: 100,
-      backSpeed: 100,
+      typeSpeed: 1000,
       backDelay: 1000,
       loop: true
     });

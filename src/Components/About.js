@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react';
-import { initScrollReveal, initTyped } from '../utils/animations';
+import React from 'react';
+
 
 
 function About() {
 
-  useEffect(() => {
-    initScrollReveal();
-    initTyped();
-  },[])
   
   return (
     <div><section class="about" id="about">
